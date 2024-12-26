@@ -31,3 +31,4 @@
     </div>
 </section>
 @include('layouts.footer')
+

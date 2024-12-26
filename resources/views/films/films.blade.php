@@ -20,9 +20,9 @@
                     @forelse ($films as $film)
                         <tr class="border-b border-gray-200 hover:bg-gray-100">
                             {{--                        <td class="py-3 px-6 text-left">{{ $film['id'] }}</td>             --}}
-                            <td class="py-3 px-6 text-left">{{ htmlspecialchars($film['title']) }}</td>
-                            <td class="py-3 px-6 text-left">{{ htmlspecialchars($film['director']) }}</td>
-                            <td class="py-3 px-6 text-left">{{ htmlspecialchars($film['year']) }}</td>
+                            <td class="py-3 px-6 text-left">{{ ($film['title']) }}</td>
+                            <td class="py-3 px-6 text-left">{{ ($film['director']) }}</td>
+                            <td class="py-3 px-6 text-left">{{ ($film['year']) }}</td>
                             <td class="py-3 px-2 text-center flex flex-col sm:flex-row sm:justify-center">
                                 <a href="{{ route('films.destroy', $film['id']) }}"
                                    class="text-red-500 hover:text-red-800 mb-2 sm:mb-0 sm:mr-4 no-underline">Delete</a>

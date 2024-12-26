@@ -85,9 +85,9 @@ class ShowController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id): RedirectResponse
+    public function destroy($id)
     {
         Show::destroy($id);
-        return redirect()->route('shows');
+        return redirect(route('shows'));
     }
 }

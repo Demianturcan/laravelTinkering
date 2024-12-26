@@ -28,11 +28,8 @@
                         <td class="py-3 px-6 text-left">{{ $show->release_date }}</td>
 {{--                            <td class="py-3 px-6 text-left">{{ $show->description }}</td>--}}
                             <td class="py-3 px-2 text-center flex flex-col sm:flex-row sm:justify-center">
-                                <form action="{{ route('shows.destroy', $show->id) }}" method="POST" class="inline">
-                                    @csrf
-                                    @method('DELETE')
-                                    <button type="submit" class="text-red-500 hover:text-red-800 mb-2 sm:mb-0 sm:mr-4 no-underline">Delete</button>
-                                </form>
+                                <a href="{{ route('shows.destroy', $show->id) }}"
+                                   class="text-red-500 hover:text-red-800 mb-2 sm:mb-0 sm:mr-4 no-underline">Delete</a>
                                 <a href="{{ route('shows.edit', $show->id) }}"
                                    class="text-gray-50 rounded-sm p-1 hover:bg-blue-700 mb-2 sm:mb-0 sm:mr-4 bg-blue-400 no-underline">Edit</a>
                                 <a href="{{ route('shows.show', $show->id) }}"

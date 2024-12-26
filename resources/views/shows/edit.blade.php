@@ -15,7 +15,7 @@
 
                 <div class="mb-4">
                     <label for="rating" class="block text-gray-700">Rating:</label>
-                    <input type="text" name="rating" value="{{ ($show->rating) }}" class="mt-1 block w-full border border-gray-300 rounded-md p-2" required>
+                    <input type="number" step="0.1" name="rating" value="{{ ($show->rating) }}" class="mt-1 block w-full border border-gray-300 rounded-md p-2" required>
                 </div>
 
                 <div class="mb-4">

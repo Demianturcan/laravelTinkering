@@ -5,6 +5,11 @@
             <h1 class="text-2xl font-bold mb-4">Show Details</h1>
 
             <div class="mb-4">
+                <strong class="block text-gray-700">ID:</strong>
+                <p class="mt-1">{{ $show->id }}</p>
+            </div>
+
+            <div class="mb-4">
                 <strong class="block text-gray-700">Title:</strong>
                 <p class="mt-1">{{ $show->title }}</p>
             </div>

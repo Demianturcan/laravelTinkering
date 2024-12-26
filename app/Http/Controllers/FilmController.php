@@ -87,7 +87,7 @@ class FilmController extends Controller
     public function destroy($id)
     {
         Film::destroy($id);
-        return redirect()->route('films');
+        return redirect(route('films'));
     }
 
 
